@@ -28,6 +28,15 @@
     // Some and Every Checks
     // Array.prototype.some() // is at least one person 19 or older?
     // Array.prototype.every() // is everyone 19 or older?
+    console.log("Task #1");
+
+    const oneMajorityAge = people.some(currPerson => 2024 - currPerson.year >= 19);
+
+    console.log(oneMajorityAge);
+
+    const allMajorityAge = people.every(currPerson => 2024 - currPerson.year >= 19);
+
+    console.log(allMajorityAge);
 
     // Array.prototype.find()
     // Find is like filter, but instead returns just the one you are looking for
