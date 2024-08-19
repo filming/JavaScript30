@@ -105,6 +105,25 @@
 
 		// 7. sort Exercise
 		// Sort the people alphabetically by last name
+		console.log("Task #7");
+
+		console.log(JSON.stringify(people));
+
+		people.sort((person1, person2) => {
+			const person1Name = person1.split(", ");
+			const person1LastName = person1Name[0];
+
+			const person2Name = person2.split(", ");
+			const person2LastName = person2Name[0];
+
+			if (person1LastName > person2LastName){
+				return 1
+			} else {
+				return -1;
+			}
+		});
+
+		console.log(people);
 
 		// 8. Reduce Exercise
 		// Sum up the instances of each of these
