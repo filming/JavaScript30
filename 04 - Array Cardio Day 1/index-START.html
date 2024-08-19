@@ -127,8 +127,21 @@
 
 		// 8. Reduce Exercise
 		// Sum up the instances of each of these
+		console.log("Task #8");
+
 		const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
 
+		const dataOccurrences = data.reduce((occurrences, currData) => {
+			if (currData in occurrences){
+				occurrences[currData] += 1;
+			} else {
+				occurrences[currData] = 1;
+			}
+
+			return occurrences;
+		}, {});
+
+		console.log(dataOccurrences);
 	</script>
 </body>
 </html>
